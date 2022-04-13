@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "squirrel-census-data",
+  "private_key_id": "a7e89c2a59bc77a8f1542332aa0ce9d21e0528ec",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCsyXjsfNibiVKv\nVpd4K2gyW33801vGn8xepBmus6N1xkYOQeusNpPn9rFKuY1kIJWWD/L4f8FWXUp+\ngsOMbUxhMxe0rsdJZrqJjrSL1iwzqgKqAuNJUrwD/hEFTV0cgEzAtt181vY5sqbP\n0SWXcgZPua84sk/SYNF/UItVIuHSgzclP1cA/XCS85uMVaOkRvsz6zyTJ79AnTti\nTIhX/ZgQx4j+FWMsoKhBQY7hewcvGrZ+kuH98AI5b8sIgK48lvHUNQTgFD5tdVYG\n2oXUAvuzekiHe/hLTY7RT0/C5oRb253VINtBLxSon302pePKDhFVYxczjKVFqc9A\nHSqMNj+9AgMBAAECggEAAnTf1P7mZnmylP8WarU1R0gBN8u6eY2yjmLnYZI4v/co\nblH2G43wFuNtPFp8feCvt8E0y18nnMZ5RWivBotUQ2qCSwWUHEFLZCLFAtrx6G8h\nmBCv8g4s0aK2U7y4luvlC3VeG0UEHahiUkCPOAK9P7tsWBJC68MIH3cB8B0tmDxS\n1Eyr73qgJvFeJRgzIbiuptVrqUUOYYAhvjMbkE2GzaQQ3eGWxUNPXK5tL+WHVcjh\nmSacGFu9OyiHw6b+J87iRHH1kT771MrCVED4WXHasNwFwEtYX4FSMGsthmZNuEYM\nap6L9aDhOAC1GC8F7KiKbbVIo5TqpDnGIS8ubxUyUQKBgQDpfpgyVQUZpjMWKRga\nFzGh7SzTXKnBjMOQdF4fCZ+zxp3Z0p+iJaC6ldT3YuQAbPPJ7+UXfjtP2MvtbzDm\n5UoT1zg9EQ+reZQSc6RgTo1IasuBzT0CmnJc/P9uBZPlQZJ588EXYMfTbfyfcHTq\ne6ndsVLxmckdE+rCqW0rAUix7QKBgQC9cPBM0BVKMuCBagO1ZUulpyltoBMSOYN3\nUogQCU+BvsMhjLv65z5mbOhVvXLmzRUqgUvX1USSzyfntuoJMuKEd1O8azNCt9Jk\n4pnr+/WPXr3bc/OhugHQBUEhHgOHYlWW0WFBLxhf09Sja1qAFz6bBDyPsRo5O5eG\nUK1+MwpLEQKBgBAq/eruTC4cfgkYy1xzIrKts57nGbIXRytng2Tuy6otJJ0Cop8d\nr+V7noWKyXLmGHNxMxHPYdgDkQtd2asDUX/SNUi1N7qN7pzgeQ9aIRpUmsbgKUtW\n2nhp5F3/8N+9DKF5KXOu9edEBGwd41qhOX/qWW31UiG7UVQtWyvRKPF5AoGATw4T\naaqoR8eFgtwP4iH8eIuSsUnMy50urJvHZhHMmRNXcOe/Box7sNif+C/QBFrvC0bb\ntJ0uOamzOHJPpjkS6D63tfhyctQtO6aInz8NEaBy0GLJ9+KcoQegT0asKFIz73U/\nBam2nT7UDMJfCPcqTBxvfXNlwx6INCf0zqZUFFECgYEA1IjvxDZvJ4RcBb22n2Pp\nC65zd4d61o2eW2aEOMMp+55yp2LdSdOx6FTU3wvUkXJwpN2VZEEvmw+E6a3I04Ov\nhRQtDuAHi+n9Bl+zbaMzQ83fV6WWWmMFvQf0C6NoR3axius0UzS15O/u1BmYdFdy\nT0Gy2x9iSkAphUT1AbanPuk=\n-----END PRIVATE KEY-----\n",
+  "client_email": "census-data@squirrel-census-data.iam.gserviceaccount.com",
+  "client_id": "114938283139402054377",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/census-data%40squirrel-census-data.iam.gserviceaccount.com"
+}
