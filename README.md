@@ -1,10 +1,12 @@
 # Project 3 Python
 
 # SquirrelCensus
-  This CLI pthon project is all about the census data of squirrels for 2018 form the Central Park. The main purpose is to help users to analyse data better and easily. 
+
+  This CLI pthon project is all about the census data of squirrels for 2018 form the Central Park. The main purpose is to help users to analyse data better and easily.
 
 # Features
-  - Users will be able to view the following
+
+- Users will be able to view the following
    . Squirrels by location
    . Squirrels by Colour
    . Total number of squirrels
@@ -16,19 +18,22 @@
 
 # Code Verification
   
-  
+  <http://pep8online.com/>
 
 # Creating google sheet and APIs
+
  . The census project is deployed on github as well on Heroku.
  . This is a backend application
  . The census uses google sheets and google drive which are enabled on the google console to a    llow changes to the worksheet.
  . The application uses API (Application Program Interface ) to enable push and pull of data from the google sheets
- ## Procedure
-  1 import CSV from to goodle drive
-  2 Name the google Sheet
+
+## Procedure
+
+  1. import CSV from to goodle drive
+  2. Name the google Sheet
   or create a new google sheet
-  3 link to google console platform https://console.cloud.google.com/home/dashboard?project=squirrelcensus
-  4 Steps to get your credentials file for users with the "new" form UI:
+  3. link to google console platform <https://console.cloud.google.com/home/dashboard?project=squirrelcensus>
+  4. Steps to get your credentials file for users with the "new" form UI:
 From the "Which API are you using?" dropdown menu, choose Google Drive API
 For the "What data will you be accessing?" question, select Application Data
 For the "Are you planning to use this API with Compute Engine, Kubernetes Engine, App Engine, or Cloud Functions?" question, select No, I'm not using them
@@ -46,9 +51,9 @@ On the next page, click on the Service Account that has been created
 On the next page, click on the Keys tab
 
 Click on the Add Key dropdown and select Create New Key
-Select JSON and then click Create. This will trigger the json file with your API credentials in it to download to your machine. 
+Select JSON and then click Create. This will trigger the json file with your API credentials in it to download to your machine.
 
- Link to gitpod template https://github.com/Code-Institute-Org/python-essentials-template
+ Link to gitpod template <https://github.com/Code-Institute-Org/python-essentials-template>
 
 Now we’ll add our credentials file that we downloaded in the previous video, locate
 the json file wherever it is within your computer files, mine is in my downloads folder, and
@@ -71,9 +76,9 @@ and we're going to add one more in here to protect our creds.json file, and then
 
 # Deployment
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+- Your code must be placed in the `run.py` file
+- Your dependencies must be placed in the `requirements.txt` file
+- Do not edit any of the other files or your code may not deploy properly
 
 ## Creating the Heroku app
 
@@ -91,5 +96,3 @@ Connect your GitHub repository and deploy as normal.
 ## Constraints
 
 The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
-
