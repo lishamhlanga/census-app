@@ -10,9 +10,9 @@ SCOPE = [
 CREDS = Credentials.from_service_account_file('creds.json')
 SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
-SHEET = GSPREAD_CLIENT.open('squirrel-census')
+SHEET = GSPREAD_CLIENT.open('weather_data')
 
-squirreldata = SHEET.worksheet("squirreldata")
+week1 = SHEET.worksheet("weather_data")
 
 data = squirreldata.get_all_values()
 
