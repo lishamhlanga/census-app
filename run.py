@@ -10,10 +10,10 @@ SCOPE = [
 CREDS = Credentials.from_service_account_file('creds.json')
 SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
-SHEET = GSPREAD_CLIENT.open('weather_data')
+SHEET = GSPREAD_CLIENT.open('weather')
 
-week1 = SHEET.worksheet("weather_data")
+week = SHEET.worksheet("week1")
 
-data = squirreldata.get_all_values()
+data = week.get_all_values()
 
 print(data)
