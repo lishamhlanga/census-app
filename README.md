@@ -1,10 +1,75 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Project 3 Python
 
-Welcome lishamhlanga,
+# SquirrelCensus
+  This CLI pthon project is all about the census data of squirrels for 2018 form the Central Park. The main purpose is to help users to analyse data better and easily. 
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+# Features
+  - Users will be able to view the following
+   . Squirrels by location
+   . Squirrels by Colour
+   . Total number of squirrels
+   . Add and dletec sqqirrels
+   . Nunmber of Squirrels tha
+   . Users will be able to input data to the worksheeet
+   . Error checking and alerts if user inputs wrong data
+   . Able to move squirrels from one location to another
 
-## Reminders
+# Code Verification
+  
+  
+
+# Creating google sheet and APIs
+ . The census project is deployed on github as well on Heroku.
+ . This is a backend application
+ . The census uses google sheets and google drive which are enabled on the google console to a    llow changes to the worksheet.
+ . The application uses API (Application Program Interface ) to enable push and pull of data from the google sheets
+ ## Procedure
+  1 import CSV from to goodle drive
+  2 Name the google Sheet
+  or create a new google sheet
+  3 link to google console platform https://console.cloud.google.com/home/dashboard?project=squirrelcensus
+  4 Steps to get your credentials file for users with the "new" form UI:
+From the "Which API are you using?" dropdown menu, choose Google Drive API
+For the "What data will you be accessing?" question, select Application Data
+For the "Are you planning to use this API with Compute Engine, Kubernetes Engine, App Engine, or Cloud Functions?" question, select No, I'm not using them
+
+Click Next
+
+Enter a Service Account name, you can call it anything you like - I will call mine "squirrielscensus" - then click Create
+
+In the Role Dropdown box choose Basic > Editor then press Continue
+
+These options can be left blank, click Done
+
+On the next page, click on the Service Account that has been created
+
+On the next page, click on the Keys tab
+
+Click on the Add Key dropdown and select Create New Key
+Select JSON and then click Create. This will trigger the json file with your API credentials in it to download to your machine. 
+
+ Link to gitpod template https://github.com/Code-Institute-Org/python-essentials-template
+
+Now we’ll add our credentials file that we downloaded in the previous video, locate
+the json file wherever it is within your computer files, mine is in my downloads folder, and
+simply drag and drop it into your Gitpod workspace.
+And to make our lives a little easier when we
+come to access this file in the next video, we’ll rename it to creds.json.
+Now let’s open up our json file and take a look at it. The colors here make it look
+like we have an error in our code, but this is just Gitpod being unhappy about the length
+of our private_key value, the code is actually valid. What we want to do is find our client_email
+value here, and copy this email address generated for our credentials. Copy it without the quotes around it.
+And then we’ll go back to our spreadsheet and click the share button here,
+paste in our client email, make sure “Editor” is selected, untick “Notify People”, and then click "share".
+This tells the sheet to allow our project to access and edit it.
+Now, as our creds.json file contains sensitive information that should be kept secret,
+we need to ensure that this file is never committed or sent to Github. So how do we do that?
+Well, you may have noticed this .gitignore file here when you created your workspace
+from our template. This file contains a list of files that should not be committed or sent to Github.
+For the purposes of our template, it already contains a few files and folders,
+and we're going to add one more in here to protect our creds.json file, and then save the file with CTRL-S.
+
+# Deployment
 
 * Your code must be placed in the `run.py` file
 * Your dependencies must be placed in the `requirements.txt` file
@@ -19,7 +84,7 @@ When you create the app, you will need to add two buildpacks from the _Settings_
 
 You must then create a _Config Var_ called `PORT`. Set this to `8000`
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+If you have credentials, such as in the squirrels census project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
 
 Connect your GitHub repository and deploy as normal.
 
@@ -27,5 +92,4 @@ Connect your GitHub repository and deploy as normal.
 
 The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
 
------
-Happy coding!
+
