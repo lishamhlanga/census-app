@@ -23,8 +23,17 @@ def get_weekly_data():
     print("Example : Monday, 10, Cloudy\n")
 
     data_str = input ("Please enter missing weekly data:\n")
-    print(f"The data provided is\n {data_str}")
+    #print(f"The data provided is\n {data_str}")
+    weekly_data = data_str.split(",")
+    check_data(weekly_data)
+    #print(data_str)
 
+def check_data(values):
+    try:
+        if len(values) != 3:
+            raise ValueError(f"3 values required , you provided {len(values)}")
+    except ValueError as e:
+        print(f"Invalid data: {e}, please re-try.\n")
 
 get_weekly_data()
 
