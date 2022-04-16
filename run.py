@@ -13,7 +13,14 @@ GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('empdata')
 
 week = SHEET.worksheet("empDets")
-data = week.get_all_values()
+
+print("""
+      ------------------------------------------------------
+     |======================================================| 
+     |======== Welcome To Employee Data System==============|
+     |======================================================|
+      ------------------------------------------------------             
+""")
 
 class Employee:
     employeeList = list()
