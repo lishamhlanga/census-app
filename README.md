@@ -115,7 +115,7 @@ The deployment terminal is set to 80 columns by 24 rows. That means that each li
 . I encontered a lot of difficulties especially with Gitpod, Initially i had done a car game project done and dusted working great from vscode and pycharm, I then tested it on Gitpod and it never worked, the tutor assistance they said Gitpod does not support Tkinter as part of the game was graphical. So i was faced with choices of what to do . I then moved to a Employee management system and time was the downside . It connects to google sheets well but there were few issues so I coded for the app to operate independently. Then an issue of not commiting the handler issues pull issues of which it was solved but left me with minimal time. see below >
 
 ! [rejected] main -> main (non-fast-forward)
-error: failed to push some refs to 'https://github.com/lishamhlanga/employeedata.git'
+error: failed to push some refs to <https://github.com/lishamhlanga/employeedata.git>
 hint: Updates were rejected because the tip of your current branch is behind
 hint: its remote counterpart. Integrate the remote changes (e.g.
 hint: 'git pull ...') before pushing again.
@@ -125,11 +125,10 @@ gitpod /workspace/employeedatdata (main) $
 
 
 The commits all I had done never went through only last resort was to just code most of it and then deploy
-
 # Credits 
 . Credit goes to the lesson from code institude
 . Slack
 . Student Support
 . stack exhange
-. youtube channel https://www.youtube.com/watch?v=4ssigWmExak
+. youtube channel <https://www.youtube.com/watch?v=4ssigWmExak>
 
