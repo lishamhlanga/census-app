@@ -2,7 +2,8 @@
 
 # Employee Management System
 
-  This CLI pthon project is all about the census data of squirrels for 2018 form the Central Park. The main purpose is to help users to analyse data better and easily and maintain their employee details. 
+  This CLI pthon project is all about the census data of squirrels for 2018 form the Central Park. The main purpose is to help users to analyse data better and easily and maintain their employee details eg like the accounts/finance department to manage to easily create and add and view and update employees from the same screen. check the updated data and print it to the terminal.
+
 
 # Features
 
@@ -16,21 +17,16 @@
    . Error checking and alerts if user inputs wrong data
    
 # How it works
-   .
-   .
-   .
-   .
-   .
-   .
-   .
-   .
-   .
-   .
-   .
-   .
-   .
-   .
-
+   . The app runs from Heroku 
+   . The user is greeted with a welcome screen
+   . Presented with 5 choice for now 
+   . 1 > add new employee
+   . 2 > get all employee list
+   . 3 > get employee by id
+   . 4 > update employee by Id 
+   . 5 > remove employee by Id
+   . 6 > search employee by id ( feature update )
+   
 # Code Verification
   
   <http://pep8online.com/>
@@ -39,7 +35,7 @@
 
  . The project is deployed on github as well on Heroku.
  . This is a backend application
- . The census uses google sheets and google drive which are enabled on the google console to allow changes to the worksheet.
+ . The Employee management system uses google sheets and google drive which are enabled on the google console to allow     changes to the worksheet.
  . The application uses API (Application Program Interface ) to enable push and pull of data from the google sheets
 
 ## Procedure
@@ -107,3 +103,33 @@ When creating the app, added two buildpacks from the _Settings_ tab. T
 ## Constraints
 
 The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+# Future Updates
+. Add ability to search for employees
+. The google sheets more rows and columns to be added through the app itself and updated on the google sheet
+. To add a user login and pasword to protect the app from being misused and as it contains sensitive information it must adhere to GDPR laws
+. The google sheets currently 3 worksheets , empdetails, hours worked,  and weekly salary.
+. Also to incorporate emailing to the user details like weekly hours and weekly salary and othe important stuff for the employees.
+. More functionality to be added , like start date as well, eg View start date, View next to Kin- in case of emergencies, View employee phone numbers, Request on file from employees, icorporate pdf and create a template for the pay slip as well that to be emailed.
+# Difficulties
+
+. I encontered a lot of difficulties especially with Gitpod, Initially i had done a car game project done and dusted working great from vscode and pycharm, I then tested it on Gitpod and it never worked, the tutor assistance they said Gitpod does not support Tkinter as part of the game was graphical. So i was faced with choices of what to do . I then moved to a Employee management system and time was the downside . It connects to google sheets well but there were few issues so I coded for the app to operate independently. Then an issue of not commiting the handler issues pull issues of which it was solved but left me with minimal time. see below >
+
+! [rejected] main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/lishamhlanga/employeedata.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+gitpod /workspace/employeedatdata (main) $
+
+
+
+The commits all I had done never went through only last resort was to just code most of it and then deploy
+
+# Credits 
+. Credit goes to the lesson from code institude
+. Slack
+. Student Support
+. stack exhange
+. youtube channel https://www.youtube.com/watch?v=4ssigWmExak
+
