@@ -1,20 +1,35 @@
 # Project 3 Python
 
-# SquirrelCensus
+# Employee Management System
 
-  This CLI pthon project is all about the census data of squirrels for 2018 form the Central Park. The main purpose is to help users to analyse data better and easily.
+  This CLI pthon project is all about the census data of squirrels for 2018 form the Central Park. The main purpose is to help users to analyse data better and easily and maintain their employee details. 
 
 # Features
 
 - Users will be able to view the following
-   . Squirrels by location
-   . Squirrels by Colour
-   . Total number of squirrels
-   . Add and dletec sqqirrels
-   . Nunmber of Squirrels tha
-   . Users will be able to input data to the worksheeet
+   . They will be able to create new employee details
+   . Able to view the created employee
+   . They will be able to update the employees details
+   . be able to get all the employee list
+   . Update the details of the employee using the Id as a key
+   . Remove the employee from the file as well
    . Error checking and alerts if user inputs wrong data
-   . Able to move squirrels from one location to another
+   
+# How it works
+   .
+   .
+   .
+   .
+   .
+   .
+   .
+   .
+   .
+   .
+   .
+   .
+   .
+   .
 
 # Code Verification
   
@@ -22,9 +37,9 @@
 
 # Creating google sheet and APIs
 
- . The census project is deployed on github as well on Heroku.
+ . The project is deployed on github as well on Heroku.
  . This is a backend application
- . The census uses google sheets and google drive which are enabled on the google console to a    llow changes to the worksheet.
+ . The census uses google sheets and google drive which are enabled on the google console to allow changes to the worksheet.
  . The application uses API (Application Program Interface ) to enable push and pull of data from the google sheets
 
 ## Procedure
@@ -76,22 +91,18 @@ and we're going to add one more in here to protect our creds.json file, and then
 
 # Deployment
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
-
+- code must be placed in the `run.py` file
+- dependencies must be placed in the `requirements.txt` file
 ## Creating the Heroku app
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+When creating the app, added two buildpacks from the _Settings_ tab. T
 
 1. `heroku/python`
 2. `heroku/nodejs`
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+3. created a _Config Var_ called `PORT`. Set this to `8000`
 
-If you have credentials, such as in the squirrels census project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
+4. Credentials, such as in the Employee Management System project, I created another _Config Var_ called `CREDS` and pasted the JSON into the value field.
 
 ## Constraints
 
