@@ -12,7 +12,6 @@ SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('empdata')
 
-week = SHEET.worksheet("empDets")
 
 print("""
       ------------------------------------------------------
@@ -31,7 +30,6 @@ print("""
 class LoginUser:
     def __init__(self):
         self.data = {}
-
     def add_user(self, login, password):
         if login in self.data:
             raise AssertionError('User already exists')
@@ -53,20 +51,20 @@ class LoginManager:
         self.store = LoginUser()
 
     def _ask_input_and_password(self):
-        username = input("username: ")
-        password = input("password: ")
+        username = input("username: \n")
+        password = input("password: \n")
         return username, password
 
     def login_check(self):
         username, password  = self._ask_input_and_password()
 
         while not self.store.check_user(username, password):
-            print("Wrong username or password")
-            if input("Are you a new user?  type Y to register : ") == "y":
-                print("Starting registration process")
+            print("Wrong username or password\n")
+            if input("Are you a new user?  type Y to register : \n") == "y":
+                print("Starting registration process\n")
                 username, password = self._ask_input_and_password()
                 self.store.add_user(username, password)
-                print("Done. Try to login.")
+                print("Done. Try to login.\n")
             username, password  = self._ask_input_and_password()
 
 manager = LoginManager()
@@ -128,12 +126,12 @@ choice = 1
 employee = Employee(0, "", "", 0.0)
 while choice >= 1 and choice <= 5:
     print("\n\n1. Add New Employee\n2. Get All Employee List\n3. Get Employee By Id\n4. Update Employee By Id\n5. Remove Employee By Id\n\n")
-    choice = int(input("Enter Your Choice:" ))
+    choice = int(input("Enter Your Choice:\n" ))
     if(choice == 1):
-        empNo =int(input("Enter Employee No : "))
-        empName = input("Enter Employee Name : ")
-        empDes = input("Enter Employee Designation : ")
-        empSal = float(input("Enter Employee Salary : "))
+        empNo =int(input("Enter Employee No : \n"))
+        empName = input("Enter Employee Name : \n")
+        empDes = input("Enter Employee Designation : \n")
+        empSal = float(input("Enter Employee Salary :\n "))
         emp = Employee(empNo, empName, empDes, empSal)
         emp.addNewEmployee()
 
@@ -143,54 +141,30 @@ while choice >= 1 and choice <= 5:
                print(emp)
 
     elif(choice == 3):
-        empNo = int(input("Enter Emplyee No " ))
+        empNo = int(input("Enter Emplyee No \n" ))
         emp = employee.getEmpById(empNo)
         if(emp == False):
-            print("\nSorry..! Employee Not Found For ID : ", empNo)
+            print("\nSorry..! Employee Not Found For ID : \n", empNo)
         else:
             print(emp)
 
     elif(choice == 4):
-        empNo = int(input("Enter Employee No : "))
-        empName = input("Enter Employee Name : ")
-        empDes = input("Enter Employee Designation : ")
-        empSal = float(input("Enter Employee Salary : "))
+        empNo = int(input("Enter Employee No : \n"))
+        empName = input("Enter Employee Name : \n")
+        empDes = input("Enter Employee Designation : \n")
+        empSal = float(input("Enter Employee Salary : \n"))
         emp = employee.updateEmpById(empNo, empName, empDes, empSal)
         if (emp == False):
-            print("\nSorry..! Update Failed , Employee Not Found for Id : " , empNo)
+            print("\nSorry..! Update Failed , Employee Not Found for Id : \n" , empNo)
         else:
-            print("Successfully Updated Employee For Id ", empNo)
+            print("Successfully Updated Employee For Id \n", empNo)
 
     elif(choice == 5):
-        empNo = int(input("Enter Employee Id : "))
+        empNo = int(input("Enter Employee Id : \n"))
         emp = employee.removeEmpById(empNo)
         if(emp == False):
-            print("\nSorry..! Delete Failed , Employee Not Found for Id : ", empNo)
+            print("\nSorry..! Delete Failed , Employee Not Found for Id :\n ", empNo)
         else:
-            print("Successfully Deleted Employee For Id ", empNo)
+            print("Successfully Deleted Employee For Id\n ", empNo)
 
 
-
-
-"""
-def get_weekly_data():   
-    
-    print("Please enter missing weekly data for week1: ")
-    print("Data should be day, temp, condition separated by commas")
-    print("Example : Monday, 10, Cloudy\n")
-
-    data_str = input ("Please enter missing weekly data:\n")
-    #print(f"The data provided is\n {data_str}")
-    weekly_data = data_str.split(",")
-    check_data(weekly_data)
-    #print(data_str)
-
-def check_data(values):
-    try:
-        if len(values) != 3:
-            raise ValueError(f"3 values required , you provided {len(values)}")
-    except ValueError as e:
-        print(f"Invalid data: {e}, please re-try.\n")
-
-get_weekly_data()
-"""
