@@ -21,7 +21,7 @@ print("""
      |======================================================|
       ------------------------------------------------------   
       
-    |--------------- Important Information -----------------| 
+     |------------- Important Information ------------------| 
     
              To login please create a new registration
          Enter any information on the username and password
