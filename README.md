@@ -27,6 +27,9 @@
    . 5 > remove employee by Id
    . 6 > search employee by id ( feature update )
    
+   . To login please create a new registration
+         Enter any information on the username and password
+         Then register as a new user, type Y to register 
 # Code Verification
   
   <http://pep8online.com/>

@@ -19,7 +19,13 @@ print("""
      |======================================================| 
      |======== Welcome To Employee Data System==============|
      |======================================================|
-      ------------------------------------------------------             
+      ------------------------------------------------------   
+      
+    |--------------- Important Information -----------------| 
+    
+             To login please create a new registration
+         Enter any information on the username and password
+         Then register as a new user, type Y to register          
 """)
 
 class LoginUser:
